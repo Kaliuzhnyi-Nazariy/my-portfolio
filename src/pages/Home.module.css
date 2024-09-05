@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 72px;
+
+  padding: 0 16px;
+}
+
+.isMobile {
+  display: block;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.emphasize {
+  text-decoration: underline;
+  margin-left: 4px;
+}
