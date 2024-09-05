@@ -1,0 +1,129 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main);
+  width: 100vw;
+  padding: 8px 16px;
+  min-height: 72px;
+}
+
+.listOfLinks {
+  display: flex;
+  color: white;
+  height: 100%;
+}
+
+.listItem {
+  opacity: 1;
+
+  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100%;
+
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    scale: 1.1;
+    .linkText {
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.linkText {
+  color: white;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-areas:
+    "n g"
+    "p e";
+  /* align-self: center;
+  justify-self: center; */
+
+  padding: 24px 0;
+}
+
+.name {
+  grid-area: n;
+  align-self: center;
+  justify-self: center;
+
+  color: var(--secondary);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
+}
+
+.gitHub {
+  grid-area: g;
+  align-self: center;
+  justify-self: center;
+
+  color: var(--secondary);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
+}
+
+.phone {
+  grid-area: p;
+  align-self: center;
+  justify-self: center;
+
+  color: var(--secondary);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
+}
+
+.email {
+  grid-area: e;
+  align-self: center;
+  justify-self: center;
+
+  color: var(--secondary);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
+}
