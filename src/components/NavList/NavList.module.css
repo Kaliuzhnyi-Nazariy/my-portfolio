@@ -1,0 +1,23 @@
+.listOfLinks {
+  display: flex;
+  gap: 16px;
+  color: white;
+}
+
+.listItem {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  opacity: 0;
+  padding: 8px 12px;
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: white;
+    opacity: 1;
+    scale: 1.1;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
