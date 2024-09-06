@@ -29,9 +29,11 @@ const Layout = () => {
           </li>
         </ul>
       </div>
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
+      <div className={styles.outletContentStyle}>
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </div>
       <footer className={styles.footer}>
         <h2 className={styles.name}>Kaliuzhnyi Nazarii</h2>
         <div className={styles.gitHub}>

@@ -8,6 +8,10 @@
   min-height: 72px;
 }
 
+.outletContentStyle {
+  padding: 16px;
+}
+
 .listOfLinks {
   display: flex;
   color: white;
@@ -59,13 +63,21 @@
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
 
-  grid-template-areas:
-    "n g"
-    "p e";
+  align-items: centerc;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+      "n g"
+      "p e";
+  }
   /* align-self: center;
   justify-self: center; */
 
